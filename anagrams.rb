@@ -12,9 +12,9 @@ end
 }
 puts "there are #{anagrams.count} anagrams."
 cosmics = []
-anagrams.each {
-  |word, word2| if word.chars.last == word2.chars.first
-    cosmics.push(word.chomp(self.chars.last)+word2)
-  end
-}
-print cosmics
+ anagrams.each do |fst, snd|
+     if fst[-1] == snd[0]
+       cosmics.push [fst,snd]
+     end
+ end
+print "There are #{cosmics.count} words like cosmicomics."
