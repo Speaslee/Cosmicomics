@@ -17,4 +17,4 @@ cosmics = []
        cosmics.push [fst,snd]
      end
  end
-print "There are #{cosmics.count} words like cosmicomics."
+puts "There are #{cosmics.count} pairs that work."
